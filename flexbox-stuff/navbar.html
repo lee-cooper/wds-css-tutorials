@@ -1,21 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Document</title>
-</head>
-<body>
-  <nav>
-    <ul> 
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li>Secrets</li>
-    </ul>
-  </nav>
-  Simple responsive navbar for playing around in flexbox that I created
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">Lee's Website</a></li>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/">About</a></li>
+          <li class="nav-item"><a href="/">Contacts</a></li>
+          <li class="nav-item"><a href="/">Secrets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="card">
+            <h2 class="card-title">My Adventures in CSS</h2>
+            <h3 class="card-subtitle">How I started learning more about CSS</h3>
+            <p>
+              This is a small section of words that illustrate my journey in
+              styling websites and learning more about each of the different
+              concepts and techniques associated with that.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              nihil dolorem beatae assumenda qui quo incidunt omnis eveniet,
+              dolore praesentium soluta dolor ab iusto laboriosam doloribus
+              error sint sequi recusandae.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              nihil dolorem beatae assumenda qui quo incidunt omnis eveniet,
+              dolore praesentium soluta dolor ab iusto laboriosam doloribus
+              error sint sequi recusandae.
+            </p>
+            <hr class="divider" />
+            <div class="card-actions">
+              <button class="btn-secondary">Cancel</button>
+              <button class="btn-primary">Submit</button>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="card-title">More Content</h2>
+            <h3 class="card-subtitle">
+              Just using this to get the layout right
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+              maxime quas iusto, officia cupiditate natus veniam in voluptatem
+              deserunt quasi vitae aliquid inventore optio fugiat culpa
+              reiciendis architecto nesciunt perspiciatis?
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              nihil dolorem beatae assumenda qui quo incidunt omnis eveniet,
+              dolore praesentium soluta dolor ab iusto laboriosam doloribus
+              error sint sequi recusandae.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              nihil dolorem beatae assumenda qui quo incidunt omnis eveniet,
+              dolore praesentium soluta dolor ab iusto laboriosam doloribus
+              error sint sequi recusandae.
+            </p>
+            <hr class="divider" />
+            <div class="card-actions">
+              <button class="btn-secondary">Cancel</button>
+              <button class="btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="content-sidebar">
+          <div class="card">
+            <div class="profile-box">
+              <img
+                class="profile-image"
+                src="./lee-profile.png"
+                alt="Lee Cooper headshot"
+              />
+            </div>
+            <div class="profile-blurb">
+              <h1>Lee Cooper</h1>
+              <p>I write code and stuff.</p>
+              <p>more text to fill up the space</p>
+              <p>Buy me chicken nuggets</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="sidebar-widget">
+              <h2>Another card</h2>
+              <p>One day I'll be a master of CSS, just you wait and see!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
