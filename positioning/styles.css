@@ -1,0 +1,55 @@
+.parent {
+  /* position: relative; */
+  height: 200rem;
+}
+
+.child-one {
+  position: sticky;
+  top: 0;
+}
+
+.child-two {
+}
+
+.child-three {
+}
+
+/*  Notes
+
+Static
+Static is the way we're most used to interacting with webpages.
+It has the normal flow where one element is followed by another
+in the dom order
+
+Relative
+
+Relative acts like static positing, but you can change
+the top, right, left, and bottom position of the element.
+
+The position is RELATIVE to the position it would normally be in
+on a static flow page. Moves item out of the document flow. Does
+not often use top, right, left, and bottom
+
+Absolute
+
+Completely remove the item from the document flow, all elements
+act the same as if it weren't there or didn't exist at all. Good
+for sticking something in a specific position and not having anything
+move around it.
+
+The position is based on the first parent that is set to something other than static. If not found
+on the current parent, it looks up until it finds one, or until it hits the
+html element, at which point, it aboslutely position the element based off
+the html element
+
+Fixed
+
+Fixed position element are based on the html element, and stays in the same place
+when you scroll
+
+Sticky
+
+Combination of relative and fixed position into one. It's position is relative, 
+but will stick (aka fixed) when it is scrolled outside of it's original position
+
+*/

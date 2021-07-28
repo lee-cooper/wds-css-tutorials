@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Positioning</title>
+    <style>
+      h1 {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        font-size: 1.2rem;
+      }
+
+      body > div {
+        background-color: aqua;
+        width: 100%;
+        padding: 1rem;
+      }
+
+      .child {
+        width: 100%;
+        height: 3rem;
+      }
+
+      .parent div:nth-child(1) {
+        background-color: rgb(5, 219, 23);
+      }
+
+      .parent div:nth-child(2) {
+        background-color: red;
+      }
+
+      .parent div:nth-child(3) {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Parent
+      <div class="child-one">One</div>
+      <div class="child-two">Two</div>
+      <div class="child-three">Three</div>
+    </div>
+  </body>
+</html>
