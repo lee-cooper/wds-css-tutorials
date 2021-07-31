@@ -1,0 +1,54 @@
+/* CSS Custom Properties (aka variables or cascading variables) */
+
+/* case sensitive, these are custom properties, not actual variables
+like in other programming languages. Value is computed where it is 
+needed, not stored for use in other rules.
+
+For instance, you cannot set a property for an element and expect to 
+retrieve it in a sibling's descendant's rule. The property is only set 
+for the matching selector and its descendants, like any normal CSS.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+
+*/
+
+:root {
+  --text-color: white;
+  --background-color-primary: brown;
+  --background-color-secondary: black;
+  --div-margin-standard: 10px;
+}
+
+.one {
+  color: var(--text-color);
+  background-color: var(--background-color-primary);
+  margin: var(--div-margin-standard);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.two {
+  color: var(--text-color);
+  background-color: var(--background-color-secondary);
+  margin: var(--div-margin-standard);
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+}
+.three {
+  color: var(--text-color);
+  background-color: var(--background-color-primary);
+  margin: var(--div-margin-standard);
+  width: 75px;
+}
+.four {
+  color: var(--text-color);
+  background-color: var(--background-color-primary);
+  margin: var(--div-margin-standard);
+  width: 100px;
+}
+
+.five {
+  background-color: var(--background-color-primary);
+}
