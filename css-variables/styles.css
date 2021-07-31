@@ -1,0 +1,37 @@
+/* CSS Variables are declared with two hyphens -- and then
+the variable name afterwards */
+
+:root {
+  --div-background-color: red;
+  --text-color: black;
+  --div-padding: 10px;
+  --div-margin: 10px;
+}
+
+body {
+  /* You can specify a fallback color if the variable color 
+  is not set */
+  background-color: var(--background-color, pink);
+}
+
+.child {
+  background-color: var(--div-background-color);
+  color: var(--text-color);
+}
+
+/* use var to access variable */
+
+.one {
+  --div-background-color: blue;
+  --text-color: white;
+}
+
+.one-one {
+  margin: var(--div-margin);
+  padding: var(--div-padding);
+}
+
+.one-two {
+  margin: var(--div-margin);
+  padding: var(--div-padding);
+}
